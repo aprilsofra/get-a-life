@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Media 2A</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            color: black;
+            font-size: 13px;
+            line-height: 1rem;
+            font-family:'Public Sans', sans-serif;
+        }
+        header {
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        h1 {
+            background-color: white;
+            color: black;
+            font-size: 2.5rem;
+            line-height: 2rem;
+            font-family: 'Lyno', sans-serif;
+        }
+        h2 {
+            background-color: white;
+            color: black;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            font-family: 'Public Sans', sans-serif;
+        }
+        @font-face {
+            font-family: "Lyno";
+            src: url(../fonts/LynoJean.otf) format("truetype");
+            font-weight: normal;
+        }
+        /*div {
+            background-color: white;
+        }*/
+        /*.flex-row {
+            height: 90vh;
+            display: flex;
+            flex-direction: row;
+            /*justify-content: space-evenly;
+        }
+        #menu-col {
+            width: 30%;
+            background-color: pink;
+        }
+        #content {
+            padding: 2.5rem;
+            width: 70%;
+            background-color: white;
+        }
+        /*.small-img-cont {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            overflow: hidden;
+        }*/
+        .grid-container {
+            position: inherit;
+            display: grid;
+            width: 200px;
+            height: 200px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+            object-fit: fill;
+        }
+        .grid-item {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            display: contents;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 100%;
+            height: fit-content;
+        }
+        .rotating-image {
+          animation: rotate 5s linear infinite; /* Rotate for 5 seconds, linearly, infinitely */
+          transition: ease 0.2s;
+        }
+        .rotating-image:hover {
+            animation: none;
+            transition: ease 0.2s;
+        }
+
+        @keyframes rotate {
+          from {
+            transform: rotateY(0deg); /* Start at 0 degrees */
+          }
+          to {
+            transform: rotateY(360deg); /* End at 360 degrees */
+          }
+        }
+        figcaption {
+            width: 200px;
+            height: 100px;
+            color: black;
+            font-size: 14px;
+            line-height: 1rem;
+            font-family: 'Public Sans', sans-serif;
+            text-align: center;
+        }
+        figcaption:visited {
+            color: black;
+        }
+        figcaption:hover {
+            color: blue;
+        }
+        figcaption:active {
+            color: blue;
+        }
+        a:visited {
+            color: black
+        }
+        a:hover {
+            color: blue
+        }
+        a:active {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>⋆.˚⋆˙⟡ HELLO WORLD . ݁₊ ⊹ ݁</h1></header>
+    <header><h2>1463700_SOFRA_APRIL --- INTERACTIVE MEDIA</h2></header>
+    <div class="grid-container">
+        <div class="grid-item">
+            <figure>
+                <img src="./Week-1/img/Week_1.jpeg" class="rotating-image" alt="Rotating Image">
+                <a href="./Week-1/index.html"><figcaption>WEEK 1</figcaption></a>
+            </figure>
+        </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <figure>
+                <img src="./Week-1/img/Week_2.jpeg" class="rotating-image" alt="Rotating Image">
+                <a href="./Week-2/index.html"><figcaption>WEEK 2</figcaption></a>
+            </figure>
+        </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <figure>
+                <img src="./Week-3/img/Week_3.jpeg" class="rotating-image" alt="Rotating Image">
+                <a href="./Week-3/index.html"><figcaption>WEEK 3</figcaption></a>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>
