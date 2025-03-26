@@ -33,7 +33,7 @@
             color: black;
             font-size: 2.5rem;
             line-height: 2rem;
-            font-family: 'Lyno', sans-serif;
+            font-family: 'Alagard', sans-serif;
         }
         h2 {
             background-color: white;
@@ -43,8 +43,8 @@
             font-family: 'Public Sans', sans-serif;
         }
         @font-face {
-            font-family: "Lyno";
-            src: url(../fonts/LynoJean.otf) format("truetype");
+            font-family: "Alagard";
+            src: url(../2A_Workbook/type/alagard.ttf) format("truetype");
             font-weight: normal;
         }
         /*div {
@@ -71,26 +71,23 @@
             object-fit: cover;
             overflow: hidden;
         }*/
-        .grid-container {
-            position: inherit;
-            display: grid;
-            width: 200px;
-            height: 200px;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            grid-gap: 10px;
-            object-fit: fill;
+        .flex-container {
+        	width: 100dvw;
+            height: 100dvh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
-        .grid-item {
-            width: 200px;
-            height: 200px;
-            background-color: white;
-            display: contents;
-            justify-content: center;
-            align-items: center;
+        @media (max-width: 800px) {
+            .flex-container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         img {
-            width: 100%;
-            height: fit-content;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
         }
         .rotating-image {
           animation: rotate 5s linear infinite; /* Rotate for 5 seconds, linearly, infinitely */
@@ -141,22 +138,22 @@
 <body>
     <header><h1>⋆.˚⋆˙⟡ HELLO WORLD . ݁₊ ⊹ ݁</h1></header>
     <header><h2>1463700_SOFRA_APRIL --- INTERACTIVE MEDIA</h2></header>
-    <div class="grid-container">
-        <div class="grid-item">
+    <div class="flex-container">
+        <div id="content">
             <figure>
                 <img src="./Week-1/img/Week_1.jpeg" class="rotating-image" alt="Rotating Image">
                 <a href="./Week-1/index.html"><figcaption>WEEK 1</figcaption></a>
             </figure>
         </div>
-    <div class="grid-container">
-        <div class="grid-item">
+
+        <div id="content">
             <figure>
-                <img src="./Week-1/img/Week_2.jpeg" class="rotating-image" alt="Rotating Image">
+                <img src="./Week-2/img/Week_2.jpeg" class="rotating-image" alt="Rotating Image">
                 <a href="./Week-2/index.html"><figcaption>WEEK 2</figcaption></a>
             </figure>
         </div>
-    <div class="grid-container">
-        <div class="grid-item">
+
+        <div id="content">
             <figure>
                 <img src="./Week-3/img/Week_3.jpeg" class="rotating-image" alt="Rotating Image">
                 <a href="./Week-3/index.html"><figcaption>WEEK 3</figcaption></a>
